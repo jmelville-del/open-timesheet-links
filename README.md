@@ -4,9 +4,11 @@ A bash script and LaunchAgent config to open timesheet links at a configurable t
 ## copy script and launctl plist to mac
 
 Edit `open_timesheet_links.sh` to add the links you want opening
+
 Copy `open_timesheet_links.sh` into `[YOUR_SCRIPTS_DIR]/open_timesheet_links.sh`
 
 Edit `com.weekly.timesheets.plist` by adding your details into the placeholders
+
 Copy `com.weekly.timesheets.plist` to ~/Library/LaunchAgents/com.weekly.timesheets.plist  
 
 ## register the launch agent config
