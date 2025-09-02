@@ -1,6 +1,6 @@
-# Usage
+# Warranty
 
-Use at your own risk
+No Warranty - Use at your own risk
 
 # open-timesheet-links
 A bash script and LaunchAgent config to open timesheet links at a configurable time, for mac
