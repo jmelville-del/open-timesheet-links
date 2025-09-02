@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"\>
+<plist version="1.0">
+  <dict>
+    <key>Label</key><string>com.weekly.timesheets</string>
+
+    <!-- Run the script directly (script must have a proper shebang) -->
+    <key>Program</key><string>[PATH_TO_YOUR_SCRIPTS_DIR]/open_timesheet_links.sh</string>
+
+    <!-- Prove it works immediately; switch to StartCalendarInterval after -->
+    <key>RunAtLoad</key><true/>
+
+    <!-- Run in the logged-in user (Aqua) session so apps can open -->
+    <key>LimitLoadToSessionType</key><string>Aqua</string>
+
+    <!-- Helpful logs -->
+    <key>StandardOutPath</key><string>/Users/[YOUR_USERNAME]/Library/Logs/com.weekly.timesheets.out.log</string>
+    <key>StandardErrorPath</key><string>/Users/[YOUR_USERNAME]/Library/Logs/com.weekly.timesheets.err.log</string>
+
+    <!-- (Optional) also set PATH here for redundancy -->
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key><string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+  </dict>
+</plist>
